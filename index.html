@@ -1,0 +1,55 @@
+<!--
+Ty Steinbach
+CSC 435
+Created: 01-30-2025
+Last Edit: 01-31-2025
+
+Deliverables: 
+Code implementing a movie search app utilizing an API that has movie information
+
+Sources:
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/ceil
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Movie Search</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <main>
+            <!--Web App heading-->
+            <h1>IMDb Digital Media Search</h1>
+            
+            <!--Seaction for searching movies-->
+            <section id="search">
+                <form id="formSearch">
+                    <!--Title text input field-->
+                    <label for="txtTitle">Title:</label>
+                    <input type="text" id="txtTitle" placeholder="Movie Title">
+    
+                    <!--Year number input field-->
+                    <label for="numYear">Year:</label>
+                    <input type="number" id="numYear" min="1888" max="2099">
+    
+                    <!--Submit and reset buttons-->
+                    <button type="submit" id="btnSubmit" value="submit">Submit</button>
+                    <button type="submit" id="btnReset" value="reset">Reset</button>
+                </form>
+            </section>
+
+            <!--Section for movie search results-->
+            <section id="results"></section>
+
+            <!--Form for page traversing-->
+            <form id="formPages">
+                <button type="submit" id="btnPageDown" value="down">⯇</button>
+
+                <button type="submit" id="btnPageUp" value="up">⯈</button>
+            </form>
+            <!--Referenced JS-->
+            <script src="script.js"></script>
+        </main>
+    </body>
+</html>

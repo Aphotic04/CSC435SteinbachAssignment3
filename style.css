@@ -1,0 +1,67 @@
+/*Style the majority of text using body*/
+body {
+    text-align: center;
+    background-color: rgb(49, 49, 49);
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    margin: none none none none;
+}
+
+/*Style heading text and background*/
+h1 {
+    color: rgb(235, 133, 51);
+    display: block;
+    background-color: rgb(49, 49, 49);
+}
+
+/*Style main margins and background*/
+main {
+    margin-left: 20vw;
+    margin-right: 20vw;
+    background-color: rgb(77, 72, 68);
+    min-height: 100vh;
+}
+
+/*Style each movie container*/
+.movie {
+    display: grid;
+    grid-template-columns: 30vw;
+    gap: 1vw;
+    width: 30vw;
+    min-height: 23vh;
+    margin: 5vh auto 5vh auto;
+    background-color: rgb(49, 49, 49);
+    border-radius: 10px;
+    font: 15pt "Times New Roman", serif;
+}
+
+/*Style poster div container*/
+.poster{
+    margin: auto 8px auto 8px;
+    max-height: 32vw;
+}
+
+/*Style title div container*/
+.title {
+    font: bold 19pt "Times New Roman", serif;
+}
+
+/*Style margins of movie div containers excluding poster*/
+.title, .type, .year {
+    margin: auto 8px 20px 8px;
+}
+
+/*Style poster image*/
+img {
+    max-height: 32vw;
+    max-width: fit-content;
+}
+
+/*Style up and down buttons*/
+#btnPageDown, #btnPageUp {
+    width: 40px;
+    height: 30px;
+    margin: 10px;
+    padding: 0;
+    font-size: 16pt;
+}
